@@ -14,7 +14,7 @@ dependencies:
     git: https://github.com/bernardoveras/fluent_validation.git
   kayta_flutter:
     git:
-      url: http://tfs.desenvolvimento.vvssistemas.com.br:8081/tfs/Desenvolvimento/Projetos/_git/Kayta.Flutter
+      url: https://github.com/bernardoveras/kayta_flutter.git
   flutter:
     sdk: flutter
 

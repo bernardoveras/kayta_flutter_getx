@@ -16,15 +16,23 @@ class NotificationService extends GetxService implements INotificationService {
     Widget? icon,
     void Function()? onTap,
   }) async {
-    return Get.rawSnackbar(
-      title: title,
-      message: message,
-      titleText: titleWidget,
-      messageText: messageWidget,
-      duration: duration,
-      backgroundColor: backgroundColor ?? VvsColors.primary,
-      icon: icon,
-      onTap: (_) => onTap,
-    );
+    return await Get.showSnackbar(
+      Get.rawSnackbar(
+        title: title,
+        message: message,
+        titleText: titleWidget,
+        messageText: messageWidget,
+        duration: duration,
+        backgroundColor: backgroundColor ?? VvsColors.primary,
+        icon: icon,
+        onTap: (_) => onTap,
+      ).snackbar,
+    ).show();
   }
+
+  @override
+  Future<void> close() async => await Get.closeCurrentSnackbar();
+  
+  @override
+  void closeAllSnackbars() => Get.closeAllSnackbars();
 }

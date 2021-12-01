@@ -1,0 +1,25 @@
+name: kayta_flutter_getx
+description: Kayta para Flutter e GetX (null-safety)
+publish_to: 'none'
+version: 1.0.0
+homepage:
+
+environment:
+  sdk: ">=2.13.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  get: ^4.3.8
+  fluent_validation:
+    git: https://github.com/bernardoveras/fluent_validation.git
+  kayta_flutter:
+    git:
+      url: http://tfs.desenvolvimento.vvssistemas.com.br:8081/tfs/Desenvolvimento/Projetos/_git/Kayta.Flutter
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:

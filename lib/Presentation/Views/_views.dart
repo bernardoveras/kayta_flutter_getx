@@ -1,0 +1,1 @@
+export 'ConfiguracaoInicial/ConfiguracaoInicialView.dart';

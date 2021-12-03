@@ -16,6 +16,8 @@ class NotificationService extends GetxService implements INotificationService {
     Widget? icon,
     void Function()? onTap,
   }) async {
+    if(Get.isOverlaysOpen) await close();
+
     return await Get.showSnackbar(
       Get.rawSnackbar(
         title: title,

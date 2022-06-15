@@ -24,6 +24,6 @@ class NotificationService extends GetxService implements INotificationService {
       backgroundColor: backgroundColor ?? VvsColors.primary,
       icon: icon,
       onTap: (_) => onTap,
-    ).show();
+    );
   }
 }

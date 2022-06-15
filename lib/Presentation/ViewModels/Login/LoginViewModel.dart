@@ -1,10 +1,7 @@
 import 'package:get/get.dart';
-import 'package:kayta_flutter/Models/UsuarioModel.dart';
-import 'package:kayta_flutter/ServiceAgents/Login/ILoginServiceAgent.dart';
 import 'package:kayta_flutter/Shared/Configuracoes.dart';
 import 'package:kayta_flutter/Shared/Constants/StoragePath.dart';
 import 'package:kayta_flutter/Shared/Routes.dart';
-import 'package:kayta_flutter/Shared/Utils/Task.dart';
 import 'package:kayta_flutter/kayta_flutter.dart';
 import '../GetXViewModel.dart';
 import '../../../Shared/Services/DialogService/DialogService.dart';
